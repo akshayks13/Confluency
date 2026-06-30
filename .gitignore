@@ -21,3 +21,4 @@ __pycache__/
 
 # Logs and outputs
 *.log
+.DS_Store

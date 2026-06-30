@@ -9,8 +9,8 @@ provenance tracking, confidence scoring, and a configurable projection engine.
 ## Setup
 
 ```bash
-git clone <repo-url>
-cd EightFold
+git clone https://github.com/akshayks13/Confluency.git
+cd Confluency
 
 # Create virtual environment
 python3 -m venv .venv
@@ -406,28 +406,4 @@ All adapters catch their own exceptions. A missing file, invalid JSON, or networ
 - Row with no name AND no email → skipped
 - Conflicting values between sources → higher-priority source wins, both logged in provenance
 
----
 
-## Project Structure
-
-```
-EightFold/
-├── transformer/
-│   ├── cli.py                 ← CLI entry point
-│   ├── pipeline.py            ← 6-stage orchestrator
-│   ├── confidence.py          ← confidence formula
-│   ├── adapters/
-│   │   ├── csv_adapter.py
-│   │   ├── ats_json_adapter.py
-│   │   └── github_adapter.py
-│   ├── normalizers/           ← pure functions, fully unit-tested
-│   ├── merge/                 ← identity resolution + conflict resolution
-│   ├── projection/            ← config DSL + engine + transform registry
-│   └── validation/            ← jsonschema + semantic validation
-├── sample_inputs/             ← CSV and ATS JSON fixtures
-├── configs/                   ← projection config YAMLs
-├── resources/
-│   └── skills_taxonomy.json   ← 100+ skill aliases → canonical names
-├── tests/                     ← 50+ unit + integration tests
-└── requirements.txt
-```
