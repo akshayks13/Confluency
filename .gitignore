@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Environment variables containing secrets
+.env
+
+# Logs and outputs
+*.log

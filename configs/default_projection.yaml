@@ -1,0 +1,12 @@
+version: "1.0"
+output_schema_name: "default"
+
+# Include provenance and confidence in default output
+provenance: true
+confidence: true
+
+# Fields that are null are emitted as null (not omitted)
+missing_value_policy: "null"
+
+# Empty fields list = output full canonical record
+fields: []

@@ -1,0 +1,74 @@
+version: "1.0"
+output_schema_name: "ats_integration_v2"
+
+# ATS systems don't need provenance — it bloats their import payload
+provenance: false
+confidence: true
+
+# Missing fields are omitted entirely from output (not set to null)
+missing_value_policy: "omit"
+
+fields:
+  # Rename full_name → candidate_name (ATS field convention)
+  - source: "full_name"
+    target: "candidate_name"
+    required: true
+
+  # Primary email only (ATS expects a single email)
+  - source: "emails[0]"
+    target: "primary_email"
+    required: true
+
+  # All phones as a joined string
+  - source: "phones"
+    target: "phone_numbers"
+    transform: "join:; "
+
+  # Location fields flattened
+  - source: "location.city"
+    target: "city"
+
+  - source: "location.region"
+    target: "state"
+
+  - source: "location.country"
+    target: "country_code"
+
+  # Only skills with >0.65 confidence, extract just the names
+  - source: "skills"
+    target: "technical_skills"
+    filter: "confidence > 0.65"
+    transform: "pluck:name"
+
+  # Current company from first experience entry
+  - source: "experience[0].company"
+    target: "current_employer"
+
+  # Current title from first experience entry
+  - source: "experience[0].title"
+    target: "current_role"
+
+  # Latest education
+  - source: "education[0].institution"
+    target: "top_school"
+
+  - source: "education[0].degree"
+    target: "highest_degree"
+
+  # Seniority band derived from years_experience
+  - source: "years_experience"
+    target: "seniority_band"
+    transform: "map_range:[0,2]=Junior,[2,5]=Mid,[5,10]=Senior,[10,]=Staff"
+
+  # GitHub URL only
+  - source: "links.github"
+    target: "github_url"
+
+  # LinkedIn URL only
+  - source: "links.linkedin"
+    target: "linkedin_url"
+
+  # Data quality score for the ATS to display
+  - source: "overall_confidence"
+    target: "data_quality_score"
+    transform: "round:3"

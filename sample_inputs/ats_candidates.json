@@ -1,0 +1,104 @@
+{
+  "candidates": [
+    {
+      "candidateName": "Jane Smith",
+      "emailAddress": "jane.smith@example.com",
+      "phoneNumber": "415-555-0101",
+      "currentTitle": "Senior Software Engineer",
+      "currentCompany": "Acme Corp",
+      "location": "San Francisco, CA",
+      "linkedinUrl": "https://linkedin.com/in/janesmith",
+      "githubUrl": "https://github.com/janesmith",
+      "headline": "Full-stack engineer with 8 years of experience building scalable web applications.",
+      "skillSet": ["Python", "React", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+      "workHistory": [
+        {
+          "company": "Acme Corp",
+          "title": "Senior Software Engineer",
+          "startDate": "2020-03",
+          "endDate": null,
+          "current": true,
+          "description": "Leading backend services for a 50M user platform."
+        },
+        {
+          "company": "Previous Co",
+          "title": "Software Engineer",
+          "startDate": "2017-06",
+          "endDate": "2020-02",
+          "current": false,
+          "description": "Built REST APIs and microservices."
+        }
+      ],
+      "educationHistory": [
+        {
+          "school": "UC Berkeley",
+          "degree": "B.S.",
+          "major": "Computer Science",
+          "graduationYear": 2017
+        }
+      ]
+    },
+    {
+      "candidateName": "Maria Garcia",
+      "emailAddress": "m.garcia@company.org",
+      "phoneNumber": "(212) 555-0303",
+      "currentTitle": "Data Scientist",
+      "currentCompany": "Tech Corp",
+      "location": "Austin, TX",
+      "skills": ["scikit-learn", "TensorFlow", "Python", "SQL", "Spark"],
+      "workHistory": [
+        {
+          "company": "Tech Corp",
+          "title": "Data Scientist",
+          "startDate": "Jan 2021",
+          "endDate": "Present",
+          "current": true
+        }
+      ],
+      "educationHistory": [
+        {
+          "institution": "UT Austin",
+          "degree": "M.S.",
+          "fieldOfStudy": "Statistics",
+          "endYear": 2020
+        }
+      ]
+    },
+    {
+      "candidateName": "Wei Chen",
+      "email": "wei.chen@gmail.com",
+      "mobile": "(650) 555-0404",
+      "job_title": "ML Engineer",
+      "employer": "OpenAI",
+      "location": "San Francisco, CA",
+      "linkedin": "linkedin.com/in/weichen",
+      "technologies": ["PyTorch", "Python", "CUDA", "C++", "Rust"],
+      "jobs": [
+        {
+          "company": "OpenAI",
+          "title": "ML Engineer",
+          "start": "2022-09",
+          "end": null,
+          "is_current": true
+        }
+      ]
+    },
+    {
+      "candidateName": "Alex Johnson",
+      "emailAddress": "alex.j@nowhere.io",
+      "currentTitle": "DevOps Engineer",
+      "currentCompany": "CloudBase",
+      "location": "Remote",
+      "skillSet": ["Kubernetes", "Terraform", "AWS", "CI/CD", "Docker"],
+      "workHistory": [
+        {
+          "company": "CloudBase",
+          "title": "DevOps Engineer",
+          "startDate": "2019-01",
+          "endDate": null,
+          "current": true
+        }
+      ]
+    }
+  ]
+}

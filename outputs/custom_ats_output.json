@@ -1,0 +1,130 @@
+{
+  "run_id": "3b44c1e3",
+  "run_at": "2026-06-29T18:58:06.910627Z",
+  "pipeline_version": "1.0.0",
+  "sources_attempted": 2,
+  "candidates_total": 6,
+  "candidates_failed": 0,
+  "candidates": [
+    {
+      "candidate_id": "f2d1f1c853fd1f4b",
+      "candidate_name": "Jane Smith",
+      "primary_email": "jane.smith@example.com",
+      "phone_numbers": "+14155550101",
+      "city": "San Francisco",
+      "state": "CA",
+      "country_code": "US",
+      "technical_skills": [
+        "Python",
+        "React",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ],
+      "current_employer": "Acme Corp",
+      "current_role": "Senior Software Engineer",
+      "top_school": "UC Berkeley",
+      "highest_degree": "B.S.",
+      "github_url": "https://github.com/janesmith",
+      "linkedin_url": "https://linkedin.com/in/janesmith",
+      "data_quality_score": 0.779,
+      "overall_confidence": 0.779
+    },
+    {
+      "candidate_id": "375320dd9ae7ed40",
+      "candidate_name": "John Doe",
+      "primary_email": "john.doe@gmail.com",
+      "phone_numbers": "+16505550202",
+      "city": "New York Ny",
+      "current_employer": "Startup Inc",
+      "current_role": "Product Manager",
+      "linkedin_url": "https://linkedin.com/in/johndoe",
+      "data_quality_score": 0.59,
+      "overall_confidence": 0.59
+    },
+    {
+      "candidate_id": "4e54c3c04396937e",
+      "candidate_name": "Maria Garcia",
+      "primary_email": "m.garcia@company.org",
+      "phone_numbers": "+12125550303",
+      "city": "Austin",
+      "state": "TX",
+      "country_code": "US",
+      "technical_skills": [
+        "scikit-learn",
+        "TensorFlow",
+        "Python",
+        "SQL",
+        "Apache Spark"
+      ],
+      "current_employer": "Tech Corp",
+      "current_role": "Data Scientist",
+      "top_school": "UT Austin",
+      "highest_degree": "M.S.",
+      "data_quality_score": 0.749,
+      "overall_confidence": 0.749
+    },
+    {
+      "candidate_id": "7d32a64dbf6d0725",
+      "candidate_name": "Akshay Sharma",
+      "primary_email": "akshay.sharma@gmail.com",
+      "phone_numbers": "+919876543210",
+      "city": "Bangalore India",
+      "technical_skills": [
+        "Go",
+        "Python",
+        "Kubernetes",
+        "gRPC"
+      ],
+      "current_employer": "Google",
+      "current_role": "Software Engineer",
+      "github_url": "https://github.com/akshay",
+      "linkedin_url": "https://linkedin.com/in/akshay",
+      "data_quality_score": 0.76,
+      "overall_confidence": 0.76
+    },
+    {
+      "candidate_id": "c73f413a17b95f8a",
+      "candidate_name": "Wei Chen",
+      "primary_email": "wei.chen+jobs@gmail.com",
+      "phone_numbers": "+16505550404",
+      "city": "San Francisco",
+      "state": "CA",
+      "country_code": "US",
+      "technical_skills": [
+        "PyTorch",
+        "Python",
+        "C++",
+        "Rust"
+      ],
+      "current_employer": "OpenAI",
+      "current_role": "ML Engineer",
+      "github_url": "https://github.com/weichen",
+      "linkedin_url": "https://linkedin.com/in/weichen",
+      "data_quality_score": 0.783,
+      "overall_confidence": 0.783
+    },
+    {
+      "candidate_id": "166ca68056f6e32c",
+      "candidate_name": "Alex Johnson",
+      "primary_email": "alex.j@nowhere.io",
+      "phone_numbers": "",
+      "technical_skills": [
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "Docker"
+      ],
+      "current_employer": "CloudBase",
+      "current_role": "DevOps Engineer",
+      "data_quality_score": 0.677,
+      "overall_confidence": 0.677
+    }
+  ],
+  "validation_summary": {
+    "errors": {},
+    "warnings": {}
+  }
+}

@@ -1,0 +1,986 @@
+{
+  "run_id": "83bc3526",
+  "run_at": "2026-06-29T18:57:06.641308Z",
+  "pipeline_version": "1.0.0",
+  "sources_attempted": 2,
+  "candidates_total": 6,
+  "candidates_failed": 0,
+  "candidates": [
+    {
+      "candidate_id": "f2d1f1c853fd1f4b",
+      "full_name": "Jane Smith",
+      "emails": [
+        "jane.smith@example.com"
+      ],
+      "phones": [
+        "+14155550101"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "region": "CA",
+        "country": "US"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/janesmith",
+        "github": "https://github.com/janesmith",
+        "portfolio": null,
+        "other": [
+          "https://linkedin.com/in/janesmith",
+          "https://github.com/janesmith"
+        ]
+      },
+      "headline": "Full-stack engineer with 8 years of experience building scalable web applications.",
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "Python",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Python"
+          ]
+        },
+        {
+          "name": "React",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "React"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "PostgreSQL"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Docker"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Kubernetes"
+          ]
+        },
+        {
+          "name": "AWS",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "AWS"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Acme Corp",
+          "title": "Senior Software Engineer",
+          "start": "2020-03",
+          "end": null,
+          "is_current": true,
+          "summary": "Leading backend services for a 50M user platform."
+        },
+        {
+          "company": "Previous Co",
+          "title": "Software Engineer",
+          "start": "2017-06",
+          "end": "2020-02",
+          "is_current": false,
+          "summary": "Built REST APIs and microservices."
+        },
+        {
+          "company": "Acme Corp",
+          "title": "Senior Software Engineer",
+          "start": null,
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [
+        {
+          "institution": "UC Berkeley",
+          "degree": "B.S.",
+          "field": "Computer Science",
+          "end_year": 2017
+        }
+      ],
+      "overall_confidence": 0.779,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "jane.smith@example.com",
+          "normalized_value": "jane.smith@example.com",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641811Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "phones",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "(415) 555-0101",
+          "normalized_value": "+14155550101",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641811Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Jane Smith",
+          "normalized_value": "Jane Smith",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641811Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "San Francisco CA",
+          "normalized_value": "San Francisco Ca",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641811Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "headline",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Full-stack engineer with 8 years of experience building scalable web applications.",
+          "normalized_value": "Full-stack engineer with 8 years of experience building scalable web applications.",
+          "confidence": 0.595,
+          "extracted_at": "2026-06-29T18:57:06.641811Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "full_name",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Jane Smith",
+          "normalized_value": "Jane Smith",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642095Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "San Francisco, CA",
+          "normalized_value": "San Francisco, CA, US",
+          "confidence": 0.836,
+          "extracted_at": "2026-06-29T18:57:06.642095Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "headline",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Full-stack engineer with 8 years of experience building scalable web applications.",
+          "normalized_value": "Full-stack engineer with 8 years of experience building scalable web applications.",
+          "confidence": 0.616,
+          "extracted_at": "2026-06-29T18:57:06.642095Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "csv:recruiter_export.csv",
+        "ats_json:ats_candidates.json"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642200Z"
+    },
+    {
+      "candidate_id": "375320dd9ae7ed40",
+      "full_name": "John Doe",
+      "emails": [
+        "john.doe@gmail.com"
+      ],
+      "phones": [
+        "+16505550202"
+      ],
+      "location": {
+        "city": "New York Ny",
+        "region": null,
+        "country": null
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/johndoe",
+        "github": null,
+        "portfolio": null,
+        "other": []
+      },
+      "headline": "Product leader passionate about data-driven decisions.",
+      "years_experience": null,
+      "skills": [],
+      "experience": [
+        {
+          "company": "Startup Inc",
+          "title": "Product Manager",
+          "start": null,
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.59,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "john.doe@gmail.com",
+          "normalized_value": "john.doe@gmail.com",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641832Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "phones",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "+1-650-555-0202",
+          "normalized_value": "+16505550202",
+          "confidence": 0.51,
+          "extracted_at": "2026-06-29T18:57:06.641832Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "John Doe",
+          "normalized_value": "John Doe",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641832Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "New York NY",
+          "normalized_value": "New York Ny",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641832Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "headline",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Product leader passionate about data-driven decisions.",
+          "normalized_value": "Product leader passionate about data-driven decisions.",
+          "confidence": 0.595,
+          "extracted_at": "2026-06-29T18:57:06.641832Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "DOE JOHN",
+          "normalized_value": "Doe John",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641852Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "New York",
+          "normalized_value": "New York",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641852Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "csv:recruiter_export.csv",
+        "csv:recruiter_export.csv"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642549Z"
+    },
+    {
+      "candidate_id": "4e54c3c04396937e",
+      "full_name": "Maria Garcia",
+      "emails": [
+        "m.garcia@company.org"
+      ],
+      "phones": [
+        "+12125550303"
+      ],
+      "location": {
+        "city": "Austin",
+        "region": "TX",
+        "country": "US"
+      },
+      "links": {
+        "linkedin": null,
+        "github": null,
+        "portfolio": null,
+        "other": []
+      },
+      "headline": null,
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "scikit-learn",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "scikit-learn"
+          ]
+        },
+        {
+          "name": "TensorFlow",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "TensorFlow"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Python"
+          ]
+        },
+        {
+          "name": "SQL",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "SQL"
+          ]
+        },
+        {
+          "name": "Apache Spark",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Spark"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Tech Corp",
+          "title": "Data Scientist",
+          "start": "2021-01",
+          "end": null,
+          "is_current": true,
+          "summary": null
+        },
+        {
+          "company": "Tech Corp",
+          "title": "Data Scientist",
+          "start": null,
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [
+        {
+          "institution": "UT Austin",
+          "degree": "M.S.",
+          "field": "Statistics",
+          "end_year": 2020
+        }
+      ],
+      "overall_confidence": 0.749,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "m.garcia@company.org",
+          "normalized_value": "m.garcia@company.org",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641845Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "phones",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "(212) 555-0303",
+          "normalized_value": "+12125550303",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641845Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Maria Garcia",
+          "normalized_value": "Maria Garcia",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641845Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Austin TX",
+          "normalized_value": "Austin Tx",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641845Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "full_name",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Maria Garcia",
+          "normalized_value": "Maria Garcia",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642109Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Austin, TX",
+          "normalized_value": "Austin, TX, US",
+          "confidence": 0.836,
+          "extracted_at": "2026-06-29T18:57:06.642109Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "csv:recruiter_export.csv",
+        "ats_json:ats_candidates.json"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642647Z"
+    },
+    {
+      "candidate_id": "7d32a64dbf6d0725",
+      "full_name": "Akshay Sharma",
+      "emails": [
+        "akshay.sharma@gmail.com"
+      ],
+      "phones": [
+        "+919876543210"
+      ],
+      "location": {
+        "city": "Bangalore India",
+        "region": null,
+        "country": null
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/akshay",
+        "github": "https://github.com/akshay",
+        "portfolio": null,
+        "other": []
+      },
+      "headline": "Backend infrastructure engineer.",
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "Go",
+          "confidence": 0.85,
+          "sources": [
+            "csv:recruiter_export.csv"
+          ],
+          "aliases_seen": [
+            "Go"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.85,
+          "sources": [
+            "csv:recruiter_export.csv"
+          ],
+          "aliases_seen": [
+            "Python"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 0.85,
+          "sources": [
+            "csv:recruiter_export.csv"
+          ],
+          "aliases_seen": [
+            "Kubernetes"
+          ]
+        },
+        {
+          "name": "gRPC",
+          "confidence": 0.85,
+          "sources": [
+            "csv:recruiter_export.csv"
+          ],
+          "aliases_seen": [
+            "gRPC"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Google",
+          "title": "Software Engineer",
+          "start": null,
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.76,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "akshay.sharma@gmail.com",
+          "normalized_value": "akshay.sharma@gmail.com",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641862Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "phones",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "+91 98765 43210",
+          "normalized_value": "+919876543210",
+          "confidence": 0.51,
+          "extracted_at": "2026-06-29T18:57:06.641862Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Akshay Sharma",
+          "normalized_value": "Akshay Sharma",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641862Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Bangalore India",
+          "normalized_value": "Bangalore India",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641862Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "headline",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Backend infrastructure engineer.",
+          "normalized_value": "Backend infrastructure engineer.",
+          "confidence": 0.595,
+          "extracted_at": "2026-06-29T18:57:06.641862Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "csv:recruiter_export.csv"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642749Z"
+    },
+    {
+      "candidate_id": "c73f413a17b95f8a",
+      "full_name": "Wei Chen",
+      "emails": [
+        "wei.chen+jobs@gmail.com",
+        "wei.chen@gmail.com"
+      ],
+      "phones": [
+        "+16505550404"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "region": "CA",
+        "country": "US"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/weichen",
+        "github": "https://github.com/weichen",
+        "portfolio": null,
+        "other": [
+          "https://linkedin.com/in/weichen"
+        ]
+      },
+      "headline": "Researcher turned engineer working on LLM infrastructure.",
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "PyTorch",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "PyTorch"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Python"
+          ]
+        },
+        {
+          "name": "C++",
+          "confidence": 0.88,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "C++"
+          ]
+        },
+        {
+          "name": "Rust",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Rust"
+          ]
+        },
+        {
+          "name": "Cuda",
+          "confidence": 0.616,
+          "sources": [
+            "csv:recruiter_export.csv",
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "CUDA"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "OpenAI",
+          "title": "ML Engineer",
+          "start": "2022-09",
+          "end": null,
+          "is_current": true,
+          "summary": null
+        },
+        {
+          "company": "OpenAI",
+          "title": "ML Engineer",
+          "start": null,
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.783,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "wei.chen+jobs@gmail.com",
+          "normalized_value": "wei.chen+jobs@gmail.com",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641877Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "phones",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "(650) 555-0404",
+          "normalized_value": "+16505550404",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641877Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Wei Chen",
+          "normalized_value": "Wei Chen",
+          "confidence": 0.85,
+          "extracted_at": "2026-06-29T18:57:06.641877Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "location",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "San Francisco CA",
+          "normalized_value": "San Francisco Ca",
+          "confidence": 0.425,
+          "extracted_at": "2026-06-29T18:57:06.641877Z",
+          "conflict": true,
+          "conflict_resolution": "source_priority:ats_json:ats_candidates.json_wins"
+        },
+        {
+          "field": "headline",
+          "source": "csv:recruiter_export.csv",
+          "method": "structured_field",
+          "raw_value": "Researcher turned engineer working on LLM infrastructure.",
+          "normalized_value": "Researcher turned engineer working on LLM infrastructure.",
+          "confidence": 0.595,
+          "extracted_at": "2026-06-29T18:57:06.641877Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "emails",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "wei.chen@gmail.com",
+          "normalized_value": "wei.chen@gmail.com",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642118Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Wei Chen",
+          "normalized_value": "Wei Chen",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642118Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "location",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "San Francisco, CA",
+          "normalized_value": "San Francisco, CA, US",
+          "confidence": 0.836,
+          "extracted_at": "2026-06-29T18:57:06.642118Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "csv:recruiter_export.csv",
+        "ats_json:ats_candidates.json"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642831Z"
+    },
+    {
+      "candidate_id": "166ca68056f6e32c",
+      "full_name": "Alex Johnson",
+      "emails": [
+        "alex.j@nowhere.io"
+      ],
+      "phones": [],
+      "location": null,
+      "links": {
+        "linkedin": null,
+        "github": null,
+        "portfolio": null,
+        "other": []
+      },
+      "headline": null,
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "Kubernetes",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Kubernetes"
+          ]
+        },
+        {
+          "name": "Terraform",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Terraform"
+          ]
+        },
+        {
+          "name": "AWS",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "AWS"
+          ]
+        },
+        {
+          "name": "CI/CD",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "CI/CD"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.88,
+          "sources": [
+            "ats_json:ats_candidates.json"
+          ],
+          "aliases_seen": [
+            "Docker"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "CloudBase",
+          "title": "DevOps Engineer",
+          "start": "2019-01",
+          "end": null,
+          "is_current": true,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.677,
+      "provenance": [
+        {
+          "field": "emails",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "alex.j@nowhere.io",
+          "normalized_value": "alex.j@nowhere.io",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642124Z",
+          "conflict": false,
+          "conflict_resolution": null
+        },
+        {
+          "field": "full_name",
+          "source": "ats_json:ats_candidates.json",
+          "method": "structured_field",
+          "raw_value": "Alex Johnson",
+          "normalized_value": "Alex Johnson",
+          "confidence": 0.88,
+          "extracted_at": "2026-06-29T18:57:06.642124Z",
+          "conflict": false,
+          "conflict_resolution": null
+        }
+      ],
+      "sources_ingested": [
+        "ats_json:ats_candidates.json"
+      ],
+      "pipeline_version": "1.0.0",
+      "created_at": "2026-06-29T18:57:06.642972Z"
+    }
+  ],
+  "validation_summary": {
+    "errors": {},
+    "warnings": {}
+  }
+}

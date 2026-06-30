@@ -1,0 +1,8 @@
+full_name,email,phone,current_company,title,location,linkedin,github,skills,headline
+Jane Smith,jane.smith@example.com,(415) 555-0101,Acme Corp,Senior Software Engineer,San Francisco CA,https://linkedin.com/in/janesmith,https://github.com/janesmith,"Python, React, PostgreSQL, Docker, Kubernetes","Full-stack engineer with 8 years of experience building scalable web applications."
+John Doe,john.doe@gmail.com,+1-650-555-0202,Startup Inc,Product Manager,New York NY,https://linkedin.com/in/johndoe,,,"Product leader passionate about data-driven decisions."
+Maria Garcia,m.garcia@company.org,(212) 555-0303,Tech Corp,Data Scientist,Austin TX,,,scikit-learn;TensorFlow;Python;SQL,
+DOE JOHN,john.doe@gmail.com,,Startup Inc,Product Manager,New York,,,,
+Akshay Sharma,akshay.sharma@gmail.com,+91 98765 43210,Google,Software Engineer,Bangalore India,https://linkedin.com/in/akshay,https://github.com/akshay,"Go, Python, Kubernetes, gRPC",Backend infrastructure engineer.
+,no-at-sign-here,555-12,,,,,,,
+Wei Chen,wei.chen+jobs@gmail.com,(650) 555-0404,OpenAI,ML Engineer,San Francisco CA,https://linkedin.com/in/weichen,https://github.com/weichen,"PyTorch, Python, CUDA, C++","Researcher turned engineer working on LLM infrastructure."
