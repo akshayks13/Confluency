@@ -123,6 +123,8 @@ pytest tests/test_pipeline.py -v
 
 ## Architecture
 
+![Pipeline Architecture Diagram](outputs/architecture_diagram.png)
+
 ### Pipeline Flow
 
 ```mermaid
