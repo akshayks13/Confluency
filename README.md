@@ -408,4 +408,8 @@ All adapters catch their own exceptions. A missing file, invalid JSON, or networ
 - Row with no name AND no email → skipped
 - Conflicting values between sources → higher-priority source wins, both logged in provenance
 
+---
 
+## Author
+
+**Akshay KS** — `akshayks1005@gmail.com`  
